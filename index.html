@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Bloom - Recommendation Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar (Task 5 requirement) -->
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <h2>Travel Bloom</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Enter a destination or keyword (e.g. beach, temple, country)...">
+      <button id="btnSearch">Search</button>
+      <button id="btnClear">Clear</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Home Section -->
+  <section id="home" class="section home-section">
+    <div class="home-content">
+      <h1>EXPLORE<br>DREAM<br>DESTINATIONS</h1>
+      <p>Discover personalized travel recommendations tailored to your preferences. Search for beaches, temples, or countries to start your next journey.</p>
+    </div>
+    <div id="resultsContainer" class="results-container"></div>
+  </section>
+
+  <!-- About Us Section (Task 3 requirement) -->
+  <section id="about" class="section about-section">
+    <h2>About Us</h2>
+    <p>Welcome to Travel Bloom! We are dedicated to providing the best travel recommendations to inspire your next adventure. Our team curates top destinations across the globe, ensuring unforgettable experiences for travelers of all backgrounds.</p>
+
+    <h3>Our Team</h3>
+    <div class="team-grid">
+      <div class="team-card">
+        <h4>Sarah Johnson</h4>
+        <p>Founder & CEO - Lead travel curator with over 10 years of global travel experience.</p>
+      </div>
+      <div class="team-card">
+        <h4>Michael Chen</h4>
+        <p>Head of Operations - Ensures seamless user platform functionality and user support.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us Section (Task 4 requirement) -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or need assistance? Reach out to our team using the form below.</p>
+    <form id="contactForm" class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required placeholder="Your Name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Your Email">
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="4" required placeholder="Your Message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</main>
+
+<script src="travel_recommendation.js"></script>
+</body>
+</html>
